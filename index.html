@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title> Home | Ananda College Olympiad Assosiation </title>
@@ -11,15 +12,16 @@
 <body>
  
 <div class="topnav" id="myTopnav">
+    <img src="ananda-logo.png">
+    <img src="logo.png">
     <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="#about">About us</a>
+    <a href="#board">Board of officials</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-<div class="home">
+<div class="home" id="home">
     <div class="main">
     <div class="atom">
         <div class="radius">
@@ -40,11 +42,11 @@
     </div>
     <h1><center>Welcome to Ananda College<br> Olympiad Assosiation</center></h1>
 </div>
-<div class="about">
+<div class="about" id="about">
     <center><h1>About us</h1></center>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus placeat laudantium amet iste, non, iure eaque aliquid ipsum alias nulla voluptas eius natus minima aspernatur odit quod? Deserunt, vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odio quae fugiat sit eaque exercitationem ducimus. Aut architecto porro qui quaerat alias iusto rerum vero quidem nulla illo. Culpa, natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet labore harum laborum dignissimos dolor exercitationem id ex quidem, incidunt maiores optio est excepturi praesentium error nostrum reprehenderit quos quisquam corrupti.</p>
 </div>
-<div class="board">
+<div class="board" id="board">
 <div class="teacher">
    <center><h1>Teachers in-charge</h1></center>
    <div class="t-c" >
@@ -125,11 +127,36 @@
 </div>
 </div>
 </div>
-<div class="footer">
-    
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-main">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#board">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="fab fa-instagram"></a> 
+        <a href="#" class="fab fa-facebook"></a> 
+        <a href="#" class="fab fa-twitter"> </a>
+      </div>
+    </div>
 </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ananda College olympiad Assosiation. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
-<script>
+<script>    
+document.addEventListener('DOMContentLoaded', function() {
+  const footer = document.querySelector('.footer');
+  footer.addEventListener('click', function() {
+    footer.style.backgroundColor = '#444';
+  });
+});
+
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
